@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		761787EC21DDB38A0081FAE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 761787EB21DDB38A0081FAE9 /* AppDelegate.m */; };
+		761787EF21DDB38A0081FAE9 /* DonutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761787EE21DDB38A0081FAE9 /* DonutViewController.m */; };
+		761787F221DDB38A0081FAE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761787F021DDB38A0081FAE9 /* Main.storyboard */; };
+		761787F421DDB38D0081FAE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761787F321DDB38D0081FAE9 /* Assets.xcassets */; };
+		761787F721DDB38D0081FAE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761787F521DDB38D0081FAE9 /* LaunchScreen.storyboard */; };
+		761787FA21DDB38D0081FAE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 761787F921DDB38D0081FAE9 /* main.m */; };
+		7617880421DDB38E0081FAE9 /* DonutsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7617880321DDB38E0081FAE9 /* DonutsTests.m */; };
+		7617880F21DDB38E0081FAE9 /* DonutsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7617880E21DDB38E0081FAE9 /* DonutsUITests.m */; };
+		7617881E21DDBEDE0081FAE9 /* CircularMeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7617881D21DDBEDE0081FAE9 /* CircularMeterView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7617880021DDB38E0081FAE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 761787DF21DDB38A0081FAE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 761787E621DDB38A0081FAE9;
+			remoteInfo = Donuts;
+		};
+		7617880B21DDB38E0081FAE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 761787DF21DDB38A0081FAE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 761787E621DDB38A0081FAE9;
+			remoteInfo = Donuts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		761787E721DDB38A0081FAE9 /* Donuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Donuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		761787EA21DDB38A0081FAE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		761787EB21DDB38A0081FAE9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		761787ED21DDB38A0081FAE9 /* DonutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutViewController.h; sourceTree = "<group>"; };
+		761787EE21DDB38A0081FAE9 /* DonutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutViewController.m; sourceTree = "<group>"; };
+		761787F121DDB38A0081FAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		761787F321DDB38D0081FAE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		761787F621DDB38D0081FAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		761787F821DDB38D0081FAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		761787F921DDB38D0081FAE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		761787FF21DDB38E0081FAE9 /* DonutsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DonutsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7617880321DDB38E0081FAE9 /* DonutsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutsTests.m; sourceTree = "<group>"; };
+		7617880521DDB38E0081FAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7617880A21DDB38E0081FAE9 /* DonutsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DonutsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7617880E21DDB38E0081FAE9 /* DonutsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutsUITests.m; sourceTree = "<group>"; };
+		7617881021DDB38E0081FAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7617881C21DDBEDE0081FAE9 /* CircularMeterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularMeterView.h; sourceTree = "<group>"; };
+		7617881D21DDBEDE0081FAE9 /* CircularMeterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularMeterView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		761787E421DDB38A0081FAE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761787FC21DDB38E0081FAE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7617880721DDB38E0081FAE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		761787DE21DDB38A0081FAE9 = {
+			isa = PBXGroup;
+			children = (
+				761787E921DDB38A0081FAE9 /* Donuts */,
+				7617880221DDB38E0081FAE9 /* DonutsTests */,
+				7617880D21DDB38E0081FAE9 /* DonutsUITests */,
+				761787E821DDB38A0081FAE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		761787E821DDB38A0081FAE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				761787E721DDB38A0081FAE9 /* Donuts.app */,
+				761787FF21DDB38E0081FAE9 /* DonutsTests.xctest */,
+				7617880A21DDB38E0081FAE9 /* DonutsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		761787E921DDB38A0081FAE9 /* Donuts */ = {
+			isa = PBXGroup;
+			children = (
+				761787EA21DDB38A0081FAE9 /* AppDelegate.h */,
+				761787EB21DDB38A0081FAE9 /* AppDelegate.m */,
+				761787ED21DDB38A0081FAE9 /* DonutViewController.h */,
+				761787EE21DDB38A0081FAE9 /* DonutViewController.m */,
+				761787F021DDB38A0081FAE9 /* Main.storyboard */,
+				7617881C21DDBEDE0081FAE9 /* CircularMeterView.h */,
+				7617881D21DDBEDE0081FAE9 /* CircularMeterView.m */,
+				761787F321DDB38D0081FAE9 /* Assets.xcassets */,
+				761787F521DDB38D0081FAE9 /* LaunchScreen.storyboard */,
+				761787F821DDB38D0081FAE9 /* Info.plist */,
+				761787F921DDB38D0081FAE9 /* main.m */,
+			);
+			path = Donuts;
+			sourceTree = "<group>";
+		};
+		7617880221DDB38E0081FAE9 /* DonutsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7617880321DDB38E0081FAE9 /* DonutsTests.m */,
+				7617880521DDB38E0081FAE9 /* Info.plist */,
+			);
+			path = DonutsTests;
+			sourceTree = "<group>";
+		};
+		7617880D21DDB38E0081FAE9 /* DonutsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7617880E21DDB38E0081FAE9 /* DonutsUITests.m */,
+				7617881021DDB38E0081FAE9 /* Info.plist */,
+			);
+			path = DonutsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		761787E621DDB38A0081FAE9 /* Donuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7617881321DDB38E0081FAE9 /* Build configuration list for PBXNativeTarget "Donuts" */;
+			buildPhases = (
+				761787E321DDB38A0081FAE9 /* Sources */,
+				761787E421DDB38A0081FAE9 /* Frameworks */,
+				761787E521DDB38A0081FAE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Donuts;
+			productName = Donuts;
+			productReference = 761787E721DDB38A0081FAE9 /* Donuts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		761787FE21DDB38E0081FAE9 /* DonutsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7617881621DDB38E0081FAE9 /* Build configuration list for PBXNativeTarget "DonutsTests" */;
+			buildPhases = (
+				761787FB21DDB38E0081FAE9 /* Sources */,
+				761787FC21DDB38E0081FAE9 /* Frameworks */,
+				761787FD21DDB38E0081FAE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7617880121DDB38E0081FAE9 /* PBXTargetDependency */,
+			);
+			name = DonutsTests;
+			productName = DonutsTests;
+			productReference = 761787FF21DDB38E0081FAE9 /* DonutsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7617880921DDB38E0081FAE9 /* DonutsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7617881921DDB38E0081FAE9 /* Build configuration list for PBXNativeTarget "DonutsUITests" */;
+			buildPhases = (
+				7617880621DDB38E0081FAE9 /* Sources */,
+				7617880721DDB38E0081FAE9 /* Frameworks */,
+				7617880821DDB38E0081FAE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7617880C21DDB38E0081FAE9 /* PBXTargetDependency */,
+			);
+			name = DonutsUITests;
+			productName = DonutsUITests;
+			productReference = 7617880A21DDB38E0081FAE9 /* DonutsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		761787DF21DDB38A0081FAE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Swathi Bhattiprolu";
+				TargetAttributes = {
+					761787E621DDB38A0081FAE9 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					761787FE21DDB38E0081FAE9 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 761787E621DDB38A0081FAE9;
+					};
+					7617880921DDB38E0081FAE9 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 761787E621DDB38A0081FAE9;
+					};
+				};
+			};
+			buildConfigurationList = 761787E221DDB38A0081FAE9 /* Build configuration list for PBXProject "Donuts" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 761787DE21DDB38A0081FAE9;
+			productRefGroup = 761787E821DDB38A0081FAE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				761787E621DDB38A0081FAE9 /* Donuts */,
+				761787FE21DDB38E0081FAE9 /* DonutsTests */,
+				7617880921DDB38E0081FAE9 /* DonutsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		761787E521DDB38A0081FAE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761787F721DDB38D0081FAE9 /* LaunchScreen.storyboard in Resources */,
+				761787F421DDB38D0081FAE9 /* Assets.xcassets in Resources */,
+				761787F221DDB38A0081FAE9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761787FD21DDB38E0081FAE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7617880821DDB38E0081FAE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		761787E321DDB38A0081FAE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761787EF21DDB38A0081FAE9 /* DonutViewController.m in Sources */,
+				761787FA21DDB38D0081FAE9 /* main.m in Sources */,
+				761787EC21DDB38A0081FAE9 /* AppDelegate.m in Sources */,
+				7617881E21DDBEDE0081FAE9 /* CircularMeterView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761787FB21DDB38E0081FAE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7617880421DDB38E0081FAE9 /* DonutsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7617880621DDB38E0081FAE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7617880F21DDB38E0081FAE9 /* DonutsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7617880121DDB38E0081FAE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 761787E621DDB38A0081FAE9 /* Donuts */;
+			targetProxy = 7617880021DDB38E0081FAE9 /* PBXContainerItemProxy */;
+		};
+		7617880C21DDB38E0081FAE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 761787E621DDB38A0081FAE9 /* Donuts */;
+			targetProxy = 7617880B21DDB38E0081FAE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		761787F021DDB38A0081FAE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				761787F121DDB38A0081FAE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		761787F521DDB38D0081FAE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				761787F621DDB38D0081FAE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7617881121DDB38E0081FAE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7617881221DDB38E0081FAE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7617881421DDB38E0081FAE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Donuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Donuts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		7617881521DDB38E0081FAE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Donuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Donuts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		7617881721DDB38E0081FAE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DonutsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.DonutsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Donuts.app/Donuts";
+			};
+			name = Debug;
+		};
+		7617881821DDB38E0081FAE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DonutsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.DonutsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Donuts.app/Donuts";
+			};
+			name = Release;
+		};
+		7617881A21DDB38E0081FAE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DonutsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.DonutsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Donuts;
+			};
+			name = Debug;
+		};
+		7617881B21DDB38E0081FAE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DonutsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.DonutsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Donuts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		761787E221DDB38A0081FAE9 /* Build configuration list for PBXProject "Donuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7617881121DDB38E0081FAE9 /* Debug */,
+				7617881221DDB38E0081FAE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7617881321DDB38E0081FAE9 /* Build configuration list for PBXNativeTarget "Donuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7617881421DDB38E0081FAE9 /* Debug */,
+				7617881521DDB38E0081FAE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7617881621DDB38E0081FAE9 /* Build configuration list for PBXNativeTarget "DonutsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7617881721DDB38E0081FAE9 /* Debug */,
+				7617881821DDB38E0081FAE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7617881921DDB38E0081FAE9 /* Build configuration list for PBXNativeTarget "DonutsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7617881A21DDB38E0081FAE9 /* Debug */,
+				7617881B21DDB38E0081FAE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 761787DF21DDB38A0081FAE9 /* Project object */;
+}
