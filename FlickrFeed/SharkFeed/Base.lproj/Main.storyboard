@@ -46,17 +46,17 @@
                                 <rect key="frame" x="0.0" y="80" width="375" height="587"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="agi-LU-BTy">
-                                    <size key="itemSize" width="120" height="120"/>
+                                    <size key="itemSize" width="117" height="117"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="20" minY="25" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sharkImage" id="U5E-TN-c1L" customClass="FlickrImageCollectionViewCell">
-                                        <rect key="frame" x="20" y="25" width="120" height="120"/>
+                                        <rect key="frame" x="20" y="25" width="117" height="117"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7HU-yt-piV">
@@ -114,9 +114,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tzc-gF-ycQ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPg-cP-ndv">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tzc-gF-ycQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Tzc-gF-ycQ" firstAttribute="centerY" secondItem="NPg-cP-ndv" secondAttribute="centerY" id="BZi-5g-Kje"/>
+                                    <constraint firstItem="Tzc-gF-ycQ" firstAttribute="leading" secondItem="NPg-cP-ndv" secondAttribute="leading" id="LSO-Pj-WNv"/>
+                                    <constraint firstItem="Tzc-gF-ycQ" firstAttribute="top" secondItem="NPg-cP-ndv" secondAttribute="top" id="Y2y-vq-Wrn"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tzc-gF-ycQ" secondAttribute="bottom" id="fu6-mv-32L"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tzc-gF-ycQ" secondAttribute="trailing" id="hyC-EC-B8P"/>
+                                    <constraint firstItem="Tzc-gF-ycQ" firstAttribute="centerX" secondItem="NPg-cP-ndv" secondAttribute="centerX" id="vJd-Mz-0l4"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="gXZ-Eh-DQO" id="scy-mj-Ghg"/>
+                                </connections>
+                            </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKr-xn-nLy" userLabel="Bottom Border View">
                                 <rect key="frame" x="30" y="586" width="315" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -237,7 +253,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Tzc-gF-ycQ" firstAttribute="top" secondItem="wDQ-xa-sUt" secondAttribute="top" id="1cF-cn-CGT"/>
+                            <constraint firstItem="NPg-cP-ndv" firstAttribute="leading" secondItem="wDQ-xa-sUt" secondAttribute="leading" id="4Lm-G0-ynF"/>
                             <constraint firstItem="0qH-2M-5gN" firstAttribute="top" secondItem="cKr-xn-nLy" secondAttribute="bottom" constant="15" id="CDf-i6-wWX"/>
                             <constraint firstItem="suC-RN-tE3" firstAttribute="leading" secondItem="wDQ-xa-sUt" secondAttribute="leading" constant="30" id="EuM-oI-lWj"/>
                             <constraint firstItem="cKr-xn-nLy" firstAttribute="leading" secondItem="wDQ-xa-sUt" secondAttribute="leading" constant="30" id="IQz-L5-569"/>
@@ -248,10 +264,10 @@
                             <constraint firstItem="wDQ-xa-sUt" firstAttribute="bottom" secondItem="cKr-xn-nLy" secondAttribute="bottom" constant="80" id="a1u-aI-ZPN"/>
                             <constraint firstItem="f1k-Ck-uN2" firstAttribute="top" secondItem="wDQ-xa-sUt" secondAttribute="top" constant="30" id="aHp-eS-PRe"/>
                             <constraint firstItem="cKr-xn-nLy" firstAttribute="top" secondItem="YsF-gm-bzM" secondAttribute="bottom" constant="10" id="ad7-Y3-fID"/>
-                            <constraint firstItem="Tzc-gF-ycQ" firstAttribute="leading" secondItem="wDQ-xa-sUt" secondAttribute="leading" id="k5I-dL-Dfa"/>
-                            <constraint firstItem="wDQ-xa-sUt" firstAttribute="trailing" secondItem="Tzc-gF-ycQ" secondAttribute="trailing" id="rzR-yC-ShG"/>
+                            <constraint firstItem="wDQ-xa-sUt" firstAttribute="trailing" secondItem="NPg-cP-ndv" secondAttribute="trailing" id="jQ4-dK-3ii"/>
+                            <constraint firstItem="wDQ-xa-sUt" firstAttribute="bottom" secondItem="NPg-cP-ndv" secondAttribute="bottom" id="lHw-C3-pHi"/>
                             <constraint firstItem="wDQ-xa-sUt" firstAttribute="trailing" secondItem="0qH-2M-5gN" secondAttribute="trailing" constant="30" id="t71-6A-Gpk"/>
-                            <constraint firstItem="wDQ-xa-sUt" firstAttribute="bottom" secondItem="Tzc-gF-ycQ" secondAttribute="bottom" id="wHS-Q5-roB"/>
+                            <constraint firstItem="NPg-cP-ndv" firstAttribute="top" secondItem="wDQ-xa-sUt" secondAttribute="top" id="vDS-hc-Czx"/>
                             <constraint firstItem="YsF-gm-bzM" firstAttribute="trailing" secondItem="cKr-xn-nLy" secondAttribute="trailing" id="yBJ-wZ-RGD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wDQ-xa-sUt"/>
@@ -259,6 +275,7 @@
                     <connections>
                         <outlet property="download" destination="CTP-at-g73" id="CQg-rY-xxZ"/>
                         <outlet property="openInApp" destination="oi7-WJ-UYY" id="ZhQ-y3-MI1"/>
+                        <outlet property="sharkImageScrollView" destination="NPg-cP-ndv" id="2sn-NG-gxq"/>
                         <outlet property="sharkImageView" destination="Tzc-gF-ycQ" id="eab-xf-wzj"/>
                         <outlet property="story" destination="YsF-gm-bzM" id="rWS-Sv-Nti"/>
                     </connections>

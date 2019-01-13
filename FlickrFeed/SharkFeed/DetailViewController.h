@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UIScrollViewDelegate>
 
+@property (nonatomic,strong) IBOutlet UIScrollView *sharkImageScrollView;
 @property (nonatomic,strong) IBOutlet UIImageView *sharkImageView;
 @property (nonatomic,strong) IBOutlet UITextView *story;
 

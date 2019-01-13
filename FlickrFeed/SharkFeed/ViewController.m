@@ -101,6 +101,19 @@
 
 #pragma UICollectionViewDataSource
 
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGSize size = CGSizeMake(120, 120);
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        CGSize screenSize = [[UIScreen mainScreen] bounds].size;
+        if (screenSize.width == 414)
+            size = CGSizeMake(120, 120);
+        else
+            size = CGSizeMake(105, 105);
+    }
+    return size;
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return self.sharkArray.count;
@@ -117,6 +130,7 @@
     
     if([self->stack.sharkArray[indexPath.item] valueForKey:@"imageData"]){
         cell.sharkImageView.image = [UIImage imageWithData:[self->stack.sharkArray[indexPath.item] valueForKey:@"imageData"]];
+        [cell.activityIndicator stopAnimating];
     } else {
         NSUInteger indexValue = indexPath.item;
         [cell downloadImage:[self->stack.sharkArray[indexPath.item] valueForKey:@"imageURL"] atIndex:indexValue andStack:stack withCompletionBlock:^(NSData *imageData){

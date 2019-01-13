@@ -12,6 +12,7 @@
 @interface DetailViewController (){
     FlickrNetwork *flickrnetwork;
     NSString *openInFlickrURL;
+    CGFloat lastScale;
 }
 
 @end
@@ -24,6 +25,12 @@
     if(self.isSavedImage){
         self.sharkImageView.image = [UIImage imageWithData:[self.selectedPhoto objectAtIndex:3]];
     }
+    
+    self.sharkImageScrollView.minimumZoomScale=1.0;
+    self.sharkImageScrollView.maximumZoomScale=6.0;
+    self.sharkImageScrollView.contentSize=CGSizeMake(1280, 960);
+    self.sharkImageScrollView.delegate=self;
+    
     flickrnetwork = [[FlickrNetwork alloc] init];
     [self fetchSharkImage];
     [self fetchSharkTextData];
@@ -32,6 +39,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.sharkImageView;
 }
 
 - (void) fetchSharkImage {
@@ -55,7 +67,9 @@
 {
     [flickrnetwork getImageDetails:[self.selectedPhoto objectAtIndex:2] withCompletionBlock:^(NSDictionary *data){
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.story.text = [[[data valueForKey:@"photo"] valueForKey:@"description"] valueForKey:@"_content"];
+            NSString *description = [[[data valueForKey:@"photo"] valueForKey:@"description"] valueForKey:@"_content"];
+            NSString *title = [[[data valueForKey:@"photo"] valueForKey:@"title"] valueForKey:@"_content"];
+            self.story.text = [NSString stringWithFormat:@"%@ \n %@",title,description];
             self->openInFlickrURL = [[[[[data valueForKey:@"photo"] valueForKey:@"urls"] valueForKey:@"url"] objectAtIndex:0] valueForKey:@"_content"];
         });
     }];
